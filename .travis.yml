@@ -1,0 +1,8 @@
+os: windows
+language: go
+go:
+  - "1.11"
+before_install:
+  - choco install -y wixtoolset
+script:
+  - go run make.go
